@@ -1,0 +1,47 @@
+.circle{
+        border: 2px solid rgb(44, 243, 18);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: bisque;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-flow: row wrap;
+}
+body{
+    background-color: black;
+}
+
+.item{
+    height: 50px;
+    width:50px;
+    background-color: chocolate;
+    border: 2px  solid rgb(232, 14, 14);
+    margin: 4px;
+    color: white;
+    font-size: 1.5vh;
+    font-style:inherit;
+}
+.item:hover{
+    height: 100px;
+    width:100px;
+    background-color: rgb(72, 30, 210);
+    border: 2px  solid black;
+    margin: 4px;
+    /* display: inline; */
+}
+
+
+.footer{
+    border:3px  solid gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    background-color: darkgray;
+}
+
+
+
