@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="sheet.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <div class="left">
+                <h3>This is my portfolio</h3>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="vlogs ">Vlogs</a></li>
+                    <li><a href="contact me">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div id="leftsection">
+                Hello!!! My name is <span class="text-purple">Chinmay Wadhwa</span>
+                <div>I am a </div>
+                <span id="element"></span>
+            </div>
+            <div id="rightsection"><img src="image.avif" alt="Profile Image"></div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h2>Work Experience</h2>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="dev.img" alt="" class="image-top">
+                    <div class="vertical-text">FRONT END DEVELOPER</div>
+                    <div class="vertical-desc">A Front-End Developer creates websites and web applications.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="game.jpeg" alt="" class="image-top">
+                    <div class="vertical-text">GAME DESIGNER</div>
+                    <div class="vertical-desc">A Game Designer creates interactive and engaging gaming experiences.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="game2.png" alt="" class="image-top">
+                    <div class="vertical-text">GAME DEVELOPMENT</div>
+                    <div class="vertical-desc">A Game Developer builds and programs video games.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="dev.img" alt="" class="image-top">
+                    <div class="vertical-text">REACT JS DEVELOPER</div>
+                    <div class="vertical-desc">A React.js Developer builds modern web applications using React.</div>
+                </div>
+            </div>
+        </section>
+    </main>
     
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['WEB DEVELOPER', 'GAME DESIGNER'],
+            typeSpeed: 25,
+        });
+    </script>
 </body>
+
 </html>

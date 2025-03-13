@@ -1,0 +1,147 @@
+body{
+  background-color: rgb(23, 21, 21);
+  color: rgb(217, 230, 233);
+  
+  .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* fonts section  */
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* header section  */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(139, 133, 133, 0.331);
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  list-style: none;
+  margin: 0 23px;
+}
+.left{
+  font-size: 1.5rem;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  margin: 0,23px;
+}
+nav ul li a:hover{
+  color:rgb(142, 110, 110);
+  font-size: 1.05rem;
+}
+
+/* main section */
+
+.firstsection{
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      margin: 130px,0;
+}
+.firstsection div{
+      width: 31%;
+}
+
+.firstsection hr{
+  border: 0;
+  background: cadetblue;
+  height: 1.2px;
+  margin: 40px,84px;
+}
+
+
+#secondsection{
+  max-width: 80vh;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondsection .box{
+  background: white;
+  margin: 52px;
+  height: 2px;
+  display: flex;
+
+}
+
+
+.secondsection .vertical{
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: -16px 196px;
+
+}
+
+.seconsection h2{
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.image-top{
+  width: 26px;
+  position:relative;
+  margin-top: -32px;
+  left: -18px;
+  
+}
+
+
+.text-gray{
+  color: greenyellow;
+}
+#leftsection{
+   
+  width: 44%;
+  font-size: 3rem;
+  font-style:calc();
+  /* margin: 70px,0; */
+}
+.text-purple{
+      color: grey;
+}
+
+
+.vertical-text{
+position:relative;
+top: 75px;
+width: 150px;
+left: -39px ;
+
+}
+.vertical-desc{
+position:relative;
+top: 86px;
+color:cornflowerblue;
+width: 150px;
+font-size: 20px;
+left: -42px;
+
+}
+
+#rightsection img{
+      width: 90%;
+      margin: 100px,0;
+      height: 40%;
+
+}
+
+
