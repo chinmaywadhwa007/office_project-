@@ -1,0 +1,195 @@
+body {
+  height: 100vh;
+  background: lightblue;
+}
+
+/* ====side bar=== */
+
+.hellobar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px 14px;
+  width: 250px;
+  background: rgb(11, 165, 231);
+}
+
+body .dark{
+  --body-color:black;
+  --hellobar-color:gray;
+  --primary-color:#3A3B3C;
+  --toggle-color: #fff;
+  --text-color:#ccc;
+}
+
+.hellobar header .image-text img {
+  display: flex;
+  align-items: center;
+}
+
+.hellobar .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.hellobar .image-text img {
+  width: 40px;
+  border-radius: 6px;
+}
+.hellobar .img {
+  min-width: 60px;
+  align-items: center;
+}
+.hellobar header {
+  position: relative;
+}
+
+.hellobar li {
+  height: 62px;
+  background: rgba(4, 44, 61, 0.158);
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.hellobar li .icons {
+  font-size: 100px;
+  min-height: 60px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.hellobar li .text {
+  color: aliceblue;
+  transition: 2s;
+}
+
+.hellobar li a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  border-radius: 6px;
+  transition: 1s;
+}
+.hellobar li a:hover {
+  background: rgba(2, 37, 52, 0.459);
+}
+.hellobar .search-box {
+  background: rgba(255, 255, 255, 0.21);
+}
+.hellobar input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: whitesmoke;
+}
+/* .hellobar li a :hover { */
+
+.hellobar li a:hover{
+    color: rgb(146, 197, 218);
+}
+
+/* ==== header ==== */
+
+header .image-text .header-text {
+  display: flex;
+  flex-direction: column;
+}
+.header-text .class {
+  font-weight: 600;
+}
+.header-text .job_role {
+  margin-top: -2px;
+}
+
+.hellobar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+
+
+/* === dark mode === */
+
+
+.hellobar .menu-bar{
+    background: rgba(133, 96, 168, 0.37);
+    height: calc( 100% - 95px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.menu-bar .mode:hover{
+   background: rgb(32, 28, 13);
+   transition: 1.5s;
+}
+.menu-bar .day-night i{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i{
+  position:absolute;
+}
+
+.menu-bar .mode i .moon{
+  opacity: 0;
+}
+.menu-bar .mode .switch{
+  display: flex;
+  height: 100%;
+  min-width: 60px;
+  align-items: center;
+  justify-content: center;
+  background: lightgrey;
+  cursor: pointer;
+}
+.switch .switch-toggle{
+  position:relative;
+  height: 22px;
+  width: 44px;
+background:gray;
+border-radius: 22px;
+}
+.switch::before{
+  height: 15px;
+  width: 15px;
+  background:  rgb(11, 165, 231);
+  position: absolute;
+  border-radius: 50%;
+  left: 5px;
+  top: 50%;
+  transition: 3s;
+  transform: translateY(-50%);
+  /* cursor: pointer; */
+}
+
+body.dark .switch::before{
+  left:24px;
+}
+
+body.dark{
+  color:gray;
+  background-color: black;
+  
+
+}
